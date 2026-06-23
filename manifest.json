@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-economic-indicators",
-  "version": "1.0.0",
-  "description": "Economic Indicator Dashboard — FRED/World Bank/IMF/BLS macroeconomic data, trend correlation, scenario forecasting",
+  "version": "1.0.1",
+  "description": "Economic Indicator Dashboard \u2014 FRED/World Bank/IMF/BLS macroeconomic data, trend correlation, scenario forecasting",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,15 +9,26 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-economic-indicators",
   "homepage": "https://cortexprism.io/marketplace/plugins/economic-indicators",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
-    { "name": "econ_get_indicator", "description": "Get economic indicator data", "params": [] },
+    {
+      "name": "econ_get_indicator",
+      "description": "Get economic indicator data",
+      "params": []
+    },
     {
       "name": "econ_correlate",
       "description": "Correlate economic trends with business metrics",
       "params": []
     },
-    { "name": "econ_forecast", "description": "Generate economic scenario forecast", "params": [] },
+    {
+      "name": "econ_forecast",
+      "description": "Generate economic scenario forecast",
+      "params": []
+    },
     {
       "name": "econ_generate_briefing",
       "description": "Generate economist-quality briefing",
@@ -25,6 +36,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
